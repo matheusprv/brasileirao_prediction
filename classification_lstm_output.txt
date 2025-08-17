@@ -1,0 +1,252 @@
+Horário de início:  2025-08-16 12:13:04.661791
+2025-08-16 12:13:05.293115: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1755346385.313203      50 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1755346385.318836      50 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1755346385.334178      50 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1755346385.334208      50 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1755346385.334215      50 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1755346385.334219      50 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-08-16 12:13:05.338688: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/media/work/matheusvieira/mineracao/brasileirao_prediction.py:35: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda x: x.sample(n=min_count, random_state=42))
+Res
+0    1220
+1    1220
+2    1220
+Name: count, dtype: int64
+I0000 00:00:1755346389.083980      50 gpu_device.cc:2019] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 18477 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3090, pci bus id: 0000:01:00.0, compute capability: 8.6
+I0000 00:00:1755346392.264052     135 cuda_dnn.cc:529] Loaded cuDNN version 90501
+[1/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3798, mean_val_loss=1.0818
+[2/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3702, mean_val_loss=1.0940
+[3/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3653, mean_val_loss=1.0878
+[4/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3705, mean_val_loss=1.0937
+[5/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4196, mean_val_loss=1.0666
+[6/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3636, mean_val_loss=1.0974
+[7/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4199, mean_val_loss=1.0715
+[8/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3565, mean_val_loss=1.0968
+[9/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4068, mean_val_loss=1.0740
+[10/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3920, mean_val_loss=1.0928
+[11/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4065, mean_val_loss=1.0713
+[12/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3861, mean_val_loss=1.0917
+[13/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4199, mean_val_loss=1.0667
+[14/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3494, mean_val_loss=1.0977
+[15/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4151, mean_val_loss=1.0684
+[16/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3574, mean_val_loss=1.0972
+[17/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4125, mean_val_loss=1.0708
+[18/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3815, mean_val_loss=1.0933
+[19/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3543, mean_val_loss=1.0908
+[20/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3881, mean_val_loss=1.0935
+[21/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4324, mean_val_loss=1.0678
+[22/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3602, mean_val_loss=1.0974
+[23/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4278, mean_val_loss=1.0689
+[24/216] params={'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3580, mean_val_loss=1.0974
+[25/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3895, mean_val_loss=1.0765
+[26/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3861, mean_val_loss=1.0934
+[27/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3943, mean_val_loss=1.0777
+[28/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3898, mean_val_loss=1.0921
+[29/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4122, mean_val_loss=1.0707
+[30/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3665, mean_val_loss=1.0977
+[31/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4156, mean_val_loss=1.0677
+[32/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3611, mean_val_loss=1.0969
+[33/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3909, mean_val_loss=1.0789
+[34/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3795, mean_val_loss=1.0943
+[35/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3909, mean_val_loss=1.0793
+[36/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3815, mean_val_loss=1.0948
+[37/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4176, mean_val_loss=1.0682
+[38/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3474, mean_val_loss=1.0979
+[39/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4244, mean_val_loss=1.0671
+[40/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3528, mean_val_loss=1.0974
+[41/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3628, mean_val_loss=1.0891
+[42/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3778, mean_val_loss=1.0941
+[43/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3946, mean_val_loss=1.0777
+[44/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3855, mean_val_loss=1.0928
+[45/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4219, mean_val_loss=1.0684
+[46/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3608, mean_val_loss=1.0972
+[47/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4216, mean_val_loss=1.0676
+[48/216] params={'curr_dense_units': 32, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3537, mean_val_loss=1.0982
+[49/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4256, mean_val_loss=1.0650
+[50/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3980, mean_val_loss=1.0909
+[51/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3898, mean_val_loss=1.0786
+[52/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3781, mean_val_loss=1.0931
+[53/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4156, mean_val_loss=1.0693
+[54/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3577, mean_val_loss=1.0976
+[55/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4185, mean_val_loss=1.0714
+[56/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3602, mean_val_loss=1.0974
+[57/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3622, mean_val_loss=1.0895
+[58/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3923, mean_val_loss=1.0938
+[59/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3830, mean_val_loss=1.0826
+[60/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.4011, mean_val_loss=1.0916
+[61/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4009, mean_val_loss=1.0775
+[62/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3599, mean_val_loss=1.0975
+[63/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4273, mean_val_loss=1.0677
+[64/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3582, mean_val_loss=1.0973
+[65/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3844, mean_val_loss=1.0791
+[66/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3705, mean_val_loss=1.0944
+[67/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3920, mean_val_loss=1.0768
+[68/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3838, mean_val_loss=1.0934
+[69/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4187, mean_val_loss=1.0659
+[70/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3511, mean_val_loss=1.0973
+[71/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4281, mean_val_loss=1.0667
+[72/216] params={'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3494, mean_val_loss=1.0979
+[73/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3653, mean_val_loss=1.0884
+[74/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3648, mean_val_loss=1.0957
+[75/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3514, mean_val_loss=1.0930
+[76/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.4006, mean_val_loss=1.0933
+[77/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4114, mean_val_loss=1.0714
+[78/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3645, mean_val_loss=1.0968
+[79/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4264, mean_val_loss=1.0702
+[80/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3503, mean_val_loss=1.0981
+[81/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3969, mean_val_loss=1.0747
+[82/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3875, mean_val_loss=1.0936
+[83/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3787, mean_val_loss=1.0832
+[84/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3693, mean_val_loss=1.0943
+[85/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4159, mean_val_loss=1.0738
+[86/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3543, mean_val_loss=1.0972
+[87/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4236, mean_val_loss=1.0684
+[88/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3670, mean_val_loss=1.0968
+[89/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3599, mean_val_loss=1.0903
+[90/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3793, mean_val_loss=1.0943
+[91/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3545, mean_val_loss=1.0901
+[92/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3773, mean_val_loss=1.0944
+[93/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4091, mean_val_loss=1.0725
+[94/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3599, mean_val_loss=1.0973
+[95/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4196, mean_val_loss=1.0682
+[96/216] params={'curr_dense_units': 64, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3563, mean_val_loss=1.0970
+[97/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3719, mean_val_loss=1.0864
+[98/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3866, mean_val_loss=1.0944
+[99/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3747, mean_val_loss=1.0839
+[100/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3625, mean_val_loss=1.0950
+[101/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4080, mean_val_loss=1.0748
+[102/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3636, mean_val_loss=1.0973
+[103/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4244, mean_val_loss=1.0690
+[104/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3594, mean_val_loss=1.0973
+[105/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3497, mean_val_loss=1.0922
+[106/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3741, mean_val_loss=1.0942
+[107/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3969, mean_val_loss=1.0766
+[108/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3645, mean_val_loss=1.0948
+[109/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4188, mean_val_loss=1.0714
+[110/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3608, mean_val_loss=1.0975
+[111/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4023, mean_val_loss=1.0749
+[112/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3628, mean_val_loss=1.0972
+[113/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3534, mean_val_loss=1.0923
+[114/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3756, mean_val_loss=1.0941
+[115/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3545, mean_val_loss=1.0906
+[116/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3713, mean_val_loss=1.0928
+[117/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4210, mean_val_loss=1.0705
+[118/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3463, mean_val_loss=1.0972
+[119/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4216, mean_val_loss=1.0688
+[120/216] params={'curr_dense_units': 64, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3585, mean_val_loss=1.0972
+[121/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3798, mean_val_loss=1.0833
+[122/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3795, mean_val_loss=1.0945
+[123/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3511, mean_val_loss=1.0916
+[124/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3793, mean_val_loss=1.0945
+[125/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4176, mean_val_loss=1.0702
+[126/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3651, mean_val_loss=1.0977
+[127/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4247, mean_val_loss=1.0663
+[128/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3577, mean_val_loss=1.0973
+[129/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3781, mean_val_loss=1.0807
+[130/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3764, mean_val_loss=1.0950
+[131/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3616, mean_val_loss=1.0877
+[132/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3733, mean_val_loss=1.0950
+[133/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4128, mean_val_loss=1.0737
+[134/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3639, mean_val_loss=1.0976
+[135/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4125, mean_val_loss=1.0743
+[136/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3702, mean_val_loss=1.0969
+[137/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3457, mean_val_loss=1.0950
+[138/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3832, mean_val_loss=1.0947
+[139/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3824, mean_val_loss=1.0838
+[140/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3889, mean_val_loss=1.0939
+[141/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4111, mean_val_loss=1.0757
+[142/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3474, mean_val_loss=1.0978
+[143/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4210, mean_val_loss=1.0672
+[144/216] params={'curr_dense_units': 64, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3503, mean_val_loss=1.0976
+[145/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3401, mean_val_loss=1.0965
+[146/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3699, mean_val_loss=1.0954
+[147/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3753, mean_val_loss=1.0824
+[148/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3784, mean_val_loss=1.0958
+[149/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4170, mean_val_loss=1.0703
+[150/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3483, mean_val_loss=1.0973
+[151/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4222, mean_val_loss=1.0690
+[152/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3386, mean_val_loss=1.0982
+[153/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3457, mean_val_loss=1.0947
+[154/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3483, mean_val_loss=1.0971
+[155/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3537, mean_val_loss=1.0913
+[156/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3690, mean_val_loss=1.0965
+[157/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4031, mean_val_loss=1.0766
+[158/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3432, mean_val_loss=1.0978
+[159/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4026, mean_val_loss=1.0779
+[160/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3384, mean_val_loss=1.0983
+[161/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3795, mean_val_loss=1.0839
+[162/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3687, mean_val_loss=1.0961
+[163/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3597, mean_val_loss=1.0878
+[164/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3634, mean_val_loss=1.0947
+[165/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3889, mean_val_loss=1.0807
+[166/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3656, mean_val_loss=1.0973
+[167/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4122, mean_val_loss=1.0741
+[168/216] params={'curr_dense_units': 128, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3557, mean_val_loss=1.0974
+[169/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3489, mean_val_loss=1.0927
+[170/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3670, mean_val_loss=1.0954
+[171/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3705, mean_val_loss=1.0873
+[172/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3634, mean_val_loss=1.0964
+[173/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4088, mean_val_loss=1.0758
+[174/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3608, mean_val_loss=1.0971
+[175/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4111, mean_val_loss=1.0770
+[176/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3651, mean_val_loss=1.0975
+[177/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3653, mean_val_loss=1.0879
+[178/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3733, mean_val_loss=1.0954
+[179/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3526, mean_val_loss=1.0901
+[180/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3577, mean_val_loss=1.0960
+[181/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4077, mean_val_loss=1.0734
+[182/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3545, mean_val_loss=1.0977
+[183/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4048, mean_val_loss=1.0733
+[184/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3537, mean_val_loss=1.0969
+[185/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3477, mean_val_loss=1.0939
+[186/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3795, mean_val_loss=1.0953
+[187/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3506, mean_val_loss=1.0930
+[188/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3528, mean_val_loss=1.0969
+[189/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4091, mean_val_loss=1.0798
+[190/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3730, mean_val_loss=1.0975
+[191/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4062, mean_val_loss=1.0751
+[192/216] params={'curr_dense_units': 128, 'hidden_1': 256, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3548, mean_val_loss=1.0976
+[193/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3608, mean_val_loss=1.0884
+[194/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3520, mean_val_loss=1.0960
+[195/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3554, mean_val_loss=1.0910
+[196/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3599, mean_val_loss=1.0970
+[197/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3886, mean_val_loss=1.0781
+[198/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3773, mean_val_loss=1.0969
+[199/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4111, mean_val_loss=1.0753
+[200/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 112, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3577, mean_val_loss=1.0972
+[201/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3722, mean_val_loss=1.0871
+[202/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3722, mean_val_loss=1.0956
+[203/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3543, mean_val_loss=1.0912
+[204/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3619, mean_val_loss=1.0960
+[205/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3955, mean_val_loss=1.0780
+[206/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3602, mean_val_loss=1.0974
+[207/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.4054, mean_val_loss=1.0732
+[208/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 128, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3497, mean_val_loss=1.0979
+[209/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3639, mean_val_loss=1.0866
+[210/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3628, mean_val_loss=1.0969
+[211/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3341, mean_val_loss=1.0976
+[212/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.01, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3634, mean_val_loss=1.0959
+[213/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3918, mean_val_loss=1.0859
+[214/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3571, mean_val_loss=1.0976
+[215/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}  -> mean_val_acc=0.3935, mean_val_loss=1.0812
+[216/216] params={'curr_dense_units': 128, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'sgd'}  -> mean_val_acc=0.3696, mean_val_loss=1.0966
+
+Best params: {'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}
+==================================================
+Test -> loss=1.0423, acc=0.4607
+Best params: {'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}
+Top-3 by mean_val_acc:
+{'params': {'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 16, 'optimizer_name': 'adam'}, 'mean_val_acc': 0.43238636553287507, 'mean_val_loss': 1.067834722995758}
+{'params': {'curr_dense_units': 32, 'hidden_1': 272, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}, 'mean_val_acc': 0.428125, 'mean_val_loss': 1.0666990876197815}
+{'params': {'curr_dense_units': 32, 'hidden_1': 224, 'hidden_2': 144, 'lr': 0.001, 'lstm_units': 32, 'optimizer_name': 'adam'}, 'mean_val_acc': 0.42784090936183927, 'mean_val_loss': 1.0688648581504823}
+Test metrics: {'loss': 1.0422734022140503, 'acc': 0.4606741666793823}
+Horário de finalização:  2025-08-16 20:15:21.391764
+
+csilab-2.0.1@d6970cac3d95:/media/work/matheusvieira/mineracao$
+
+
+
